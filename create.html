@@ -1,0 +1,188 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="menubar">
+          <h1 id="title"><a href="index.html">D&D Database v0.1</a></h1>
+          <ul>
+            <li><a href="login.html">Log In/Register</a></li>
+            <li><a href="browse.html">Browse</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="create.html">Quick Create</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="createcontent">
+          <h1>Create a New Character</h1>
+          <form id="charform">
+            <h3>Basic Information</h3>
+            <fieldset id="BasInfo">
+              Player Name:
+              <input type="text" name="playname">
+
+              Character Name:
+              <input type="text" name="charname"><br>
+
+              Primary Class:
+              <select id="1stclass">
+                <option value="barb">Barbarian</option>
+                <option value="bard">Bard</option>
+                <option value="cler">Cleric</option>
+                <option value="drui">Druid</option>
+                <option value="figh">Fighter</option>
+                <option value="monk">Monk</option>
+                <option value="pala">Paladin</option>
+                <option value="rang">Ranger</option>
+                <option value="rogu">Rogue</option>
+                <option value="sorc">Sorcerer</option>
+                <option value="warl">Warlock</option>
+                <option value="wiza">Wizard</option>
+              </select>
+
+              Level:
+              <input type="number" name="1stlvl">
+
+              Class Specialization:
+              <select id="1stspec">
+                <option value=" ">--Barbarian--</option>
+                <option value="barb-pob">Path of the Berserker</option>
+                <option value="barb-potw-bear">Path of the Totem Warrior: Bear</option>
+                <option value="barb-potw-eagl">Path of the Totem Warrior: Eagle</option>
+                <option value="barb-potw-wolf">Path of the Totem Warrior: Wolf</option>
+                <option value="barb-potw-elk">Path of the Totem Warrior: Elk</option>
+                <option value="barb-potw-tige">Path of the Totem Warrior: Tiger</option>
+                <option value=" ">--Bard--</option>
+                <option value="bard-lore">College of Lore</option>
+                <option value="bard-valor">College of Valor</option>
+                <option value=" ">--Cleric--</option>
+
+                <option value=" ">--Druid--</option>
+
+                <option value=" ">--Fighter--</option>
+
+                <option value=" ">--Monk--</option>
+
+                <option value=" ">--Paladin--</option>
+
+                <option value=" ">--Ranger--</option>
+
+                <option value=" ">--Rogue--</option>
+
+                <option value=" ">--Sorcerer--</option>
+
+                <option value=" ">--Warlock--</option>
+
+                <option value=" ">--Wizard--</option>
+
+              </select><br>
+
+              Secondary Class:
+              <select>
+                <option value="barb">Barbarian</option>
+                <option value="bard">Bard</option>
+                <option value="cler">Cleric</option>
+                <option value="drui">Druid</option>
+                <option value="figh">Fighter</option>
+                <option value="monk">Monk</option>
+                <option value="pala">Paladin</option>
+                <option value="rang">Ranger</option>
+                <option value="rogu">Rogue</option>
+                <option value="sorc">Sorcerer</option>
+                <option value="warl">Warlock</option>
+                <option value="wiza">Wizard</option>
+              </select>
+
+              Level:
+              <input type="number" name="2ndlvl">
+
+              Class Specialization:
+              <select id="2ndspec">
+                <option value=" ">--Barbarian--</option>
+                <option value="barb-pob">Path of the Berserker</option>
+                <option value="barb-potw-bear">Path of the Totem Warrior: Bear</option>
+                <option value="barb-potw-eagl">Path of the Totem Warrior: Eagle</option>
+                <option value="barb-potw-wolf">Path of the Totem Warrior: Wolf</option>
+                <option value="barb-potw-elk">Path of the Totem Warrior: Elk</option>
+                <option value="barb-potw-tige">Path of the Totem Warrior: Tiger</option>
+                <option value=" ">--Bard--</option>
+                <option value="bard-lore">College of Lore</option>
+                <option value="bard-valor">College of Valor</option>
+                <option value=" ">--Cleric--</option>
+
+                <option value=" ">--Druid--</option>
+
+                <option value=" ">--Fighter--</option>
+
+                <option value=" ">--Monk--</option>
+
+                <option value=" ">--Paladin--</option>
+
+                <option value=" ">--Ranger--</option>
+
+                <option value=" ">--Rogue--</option>
+
+                <option value=" ">--Sorcerer--</option>
+
+                <option value=" ">--Warlock--</option>
+
+                <option value=" ">--Wizard--</option>
+
+              </select>
+
+            </fieldset>
+
+            <h3>Attributes</h3>
+            <fieldset id="Attributes">
+              Strength:
+              <input type="number" name="str"><br>
+              Constitution:
+              <input type="number" name="con"><br>
+              Dexterity:
+              <input type="number" name="dex"><br>
+              Intelligence:
+              <input type="number" name="int"><br>
+              Wisdom:
+              <input type="number" name="wis"><br>
+              Charisma:
+              <input type="number" name="cha"><br>
+            </fieldset>
+
+
+          </form>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
